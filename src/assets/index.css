@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    ul li::marker {
+        @apply text-react-blue-light;
+    }
+}
+
+ul li::marker {
+    font-size: 1.25rem;
+}
+
+ul li:not(:last-of-type) {
+    padding-bottom: 1.25rem;
+}
